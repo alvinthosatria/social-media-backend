@@ -1,4 +1,3 @@
 export const getTest = (req, res) => {
-    if (err) res.status(404).send(err);
-    res.status(200).send("Tets succeed!")
+    res.status(200).send("Send test to postman!")
 }

@@ -7,6 +7,7 @@ import likeRoutes from "./routes/likes.js"
 import commentRoutes from "./routes/comments.js"
 import authRoutes from "./routes/auth.js"
 import relationshipRoutes from "./routes/relationships.js"
+import testRoutes from "./routes/tests.js"
 import cors from "cors"
 import multer from "multer"
 import cookieParser from "cookie-parser"
@@ -52,7 +53,8 @@ app.use("/api/likes", likeRoutes)
 app.use("/api/comments", commentRoutes)
 app.use("/api/auth", authRoutes)
 app.use("/api/relationships", relationshipRoutes)
+app.use("/api/test", testRoutes)
 
-app.listen(process.env.PORT || 8080, (req, res) => {
+app.listen(process.env.PORT || 8800, (req, res) => {
     console.log("API working!");
 })
