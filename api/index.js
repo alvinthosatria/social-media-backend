@@ -23,7 +23,7 @@ app.use((req, res, next) => {
 //CORS “Cross-Origin Resource Sharing" is used so that only the localhost:3000 URL can access the API
 app.use(
     cors({
-        origin: "https://mysocialfrontend.herokuapp.com/",
+        origin: "https://mysocialfrontend.herokuapp.com",
     })
 );
 app.use(cookieParser());
