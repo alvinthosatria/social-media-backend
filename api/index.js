@@ -32,7 +32,7 @@ app.use(cookieParser());
 //For uploading files use multer
 const storage = multer.diskStorage({
 destination: function (req, file, cb) {
-    cb(null, '../client/public/upload')
+    cb(null, '../mysocialfrontend.herokuapp.com/public/upload')
 },
 filename: function (req, file, cb) {
     cb(null, Date.now() + file.originalname);
